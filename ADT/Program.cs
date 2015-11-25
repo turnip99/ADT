@@ -26,9 +26,6 @@ namespace ADT
             stack.pop();
             Console.WriteLine(stack);
             Console.ReadLine();
-            stack.pop();
-            Console.WriteLine(stack);
-            Console.ReadLine();
             stack.push(3);
             Console.WriteLine(stack);
             Console.ReadLine();
