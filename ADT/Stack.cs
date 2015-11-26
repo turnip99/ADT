@@ -33,8 +33,8 @@ namespace ADT
         {
             if (pointer > 0)
             {
-                int temp = items[pointer];
-                items[pointer] = 0;
+                int temp = items[pointer-1];
+                items[pointer-1] = 0;
                 pointer--;
                 return temp;
 	        }
