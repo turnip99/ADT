@@ -10,9 +10,39 @@ namespace ADT
     {
         static void Main(string[] args)
         {
+            Random r = new Random();
+            int[] data = new int[10];
+            for (int i = 0; i < data.Length; i++)
+            {
+                data[i] = r.Next(0,99);
+            }
+            foreach (int item in data)
+            {
+                Console.Write("{0}, ", item);
+            }
+            Console.WriteLine("");
+            Sort sort = new Sort();
+            data = sort.Split(data);
+            Console.WriteLine();
+            foreach (int item in data)
+            {
+                Console.Write("{0}, ", item);
+            }
+            Console.ReadLine();
             char type = 'n';
             Stack ObjStack = new Stack(8);
             Circular_Queue ObjQueue = new Circular_Queue(8);
+
+            int treeLength = 90000;
+            Tree tree = new Tree(treeLength);
+            for (int i = 0; i < treeLength; i++)
+            {
+                Console.Clear();
+                tree.addNode(r.Next(0, 9000));
+                Console.WriteLine(tree);
+
+            }
+
             while (true)
             {
                 Console.Clear(); 
